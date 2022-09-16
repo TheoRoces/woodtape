@@ -1,0 +1,245 @@
+.playerRadioSection {
+    position: fixed;
+    top: calc(100vh - 60px);
+    width: 100%;
+    transition: .3s;
+}
+
+.playerRadioApp {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 60px;
+    background: black;
+    color: white;
+    border-top: 1px solid white;
+}
+
+.playersLives {
+    display: flex;
+    justify-content: flex-start;
+    width: calc(100% - 60px);
+    height: 60px;
+    color: white;
+}
+
+.playerLiveOne.divPlayer1Display {
+    display: flex;
+}
+
+.playerLiveOne.divPlayer2Display {
+    display: none;
+}
+
+.playerLiveTwo.divPlayer1Display {
+    display: none;
+}
+
+.playerLiveTwo.divPlayer2Display {
+    display: flex;
+}
+
+.playerRadioApp .pochetteMusic,
+.playerRadioApp .btnPlayPause {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    color: black;
+}
+
+.playerRadioApp .pochetteMusic img {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+}
+
+.pochetteMusic {
+    position: relative;
+}
+
+.divNameLivePlayer {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: red;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: SoraBold;
+    font-size: 14px;
+}
+
+.controls {
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.playerRadioApp .metasMusic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 130px);
+}
+
+.playerRadioApp .artistMusic,
+.playerRadioApp .nameMusic {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: calc(100% - 0px);
+    margin: 0px 0px;
+    font-size: 14px;
+}
+
+.playerRadioApp .artistMusic {
+    font-family: SoraThin;
+    font-size: 12px;
+}
+
+.btnExpandPlayers {
+    position: absolute;
+    right: 0px;
+    top: -40;
+    background: black;
+    height: 20px;
+    width: 40px;
+}
+
+.sectionBtnExpendPlayer {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btnExpendPlayer {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.btnExpendPlayer .arrowExpendPlayer {
+    height: 2px;
+    background-color: white;
+    width: 10px;
+}
+
+.btnExpendPlayer .arrowLeftExpendPlayer {
+    transform: translateX(-3.5px) rotate(-45deg);
+}
+
+.btnExpendPlayer .arrowRightExpendPlayer {
+    transform: translateX(3.5px) translateY(-1.6px) rotate(45deg);
+}
+
+.sectionExtendedPlayer {
+    width: 100%;
+    background-color: black;
+    padding: 30px;
+    border-top: 1px solid white;
+}
+
+.sectionExtendedPlayer h3 {
+    margin-bottom: 20px;
+}
+
+.playerLiveOneExtend  {
+    border-bottom: 1px solid #1E1E1E;
+    padding-bottom: 15px;
+}
+
+.playerLiveTwoExtend  {
+    padding-top: 15px;
+}
+
+.sectionExtendedPlayer .playerLiveExtend {
+    display: flex;
+}
+
+.sectionExtendedPlayer .playerLiveExtend .pochetteMusic {
+    width: 100px;
+    height: 100px;
+}
+
+.sectionExtendedPlayer .playerLiveExtend img {
+    width: 100px;
+    height: 100px;
+}
+
+.sectionExtendedPlayer .playerLiveExtend .rightPlayerExtend {
+    display: flex;
+    align-items: center;
+}
+
+.sectionExtendedPlayer .playerLiveExtend .controls {
+    width: 100px;
+}
+
+.sectionExtendedPlayer .playerLiveExtend .rightPlayerExtend .metasMusic {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionExtendedPlayer .playerLiveExtend .rightPlayerExtend .metasMusic span {
+    margin: 5px 0px;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 769px) {
+    .playerRadioApp {
+        height: 60px;
+    }
+
+    .playerRadioApp .pochetteMusic,
+    .playerRadioApp .btnPlayPause {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 58px;
+        width: 58px;
+    }
+
+    .playerRadioApp .pochetteMusic img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .playerRadioApp .metasMusic {
+        max-width: calc(100% - 105px);
+    }
+
+    .playerRadioApp .artistMusic,
+    .playerRadioApp .nameMusic {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 615px) {
+    .sectionExtendedPlayer {
+        padding: 15px;
+    }
+}

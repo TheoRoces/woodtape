@@ -1,0 +1,336 @@
+.radios {
+    display: flex;
+    gap: 30px;
+}
+
+.liveRadio {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.liveRadioPlayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // border: 0.2px solid rgba(255, 255, 255, 0.384);
+}
+
+.imgLive {
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imgLive img {
+    width: 110px;
+    height: 110px;
+}
+
+.controlsTop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 26px;
+}
+
+.nameOfLive {
+    background-color: red;
+    font-family: SoraBold;
+    padding: 3px 0px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation: liveClignotant 3s ease-in-out infinite; */
+}
+
+@keyframes liveClignotant {
+    0% {
+        background: red;
+    }
+
+    50% {
+        background: transparent;
+    }
+
+    100% {
+        background: red;
+    }
+}
+
+.controlsLive {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.liveRadioPlayer .controls {
+    height: 30px;
+    width: 30px;
+}
+
+.liveRadioPlayer .controls svg {
+    width: 25px;
+    height: 25px;
+}
+
+.controlsLive .btnPlayPauseLive {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controlsLive .btnPlayPauseLive img {
+    width: 50px;
+    padding: 10px 0px;
+}
+
+.metasMusicLive {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 3px;
+    width: 100%;
+    position: relative;
+}
+
+.nameMusicLive {
+    margin-top: 4px;
+} 
+
+.nameMusicLive ,
+.artistMusicLive {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 10px);
+}
+
+.nameMusicLive {
+    font-family: SoraMedium;
+}
+
+.artistMusicLive {
+    font-family: SoraThin;
+}
+
+.taxonomiesLive {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.typeOfMusic {
+    background-color: transparent;
+    color: white;
+    padding: 5px 10px;
+    margin: 0px 10px 10px 0px;
+    border: 0.2px solid rgba(255, 255, 255, 0.384);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.typeOfMusic:hover {
+    transition: .3s;
+    background: white;
+    color: black;
+}
+
+
+/* MUSIQUES RÉCENTES */
+
+.tiltePageLasts {
+    margin-bottom: 10px;
+}
+
+.recentMusicsSection {
+    margin-bottom: 0px;
+}
+
+.stickyRecentMusicSection {
+    position: sticky;
+    top: 70px;
+    background: #0C0C0C;
+    padding-top: 20px;
+}
+
+.recentMusicsSection .selectorLiveRecentMusics {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.recentMusicsSection .selectorLiveRecentMusics .selectorLive {
+    /* background: #1e1e1e; */
+    background: #0C0C0C;
+    /* border-radius: 50px; */
+    border: 1px solid white;
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: SoraBold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.headTabRecentMusics {
+    /* background: #1e1e1e; */
+    background: #0C0C0C;
+    padding: 10px 30px;
+    /* border-radius: 10px; */
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headTabRecentMusics .tabLeftRecentMusics span {
+    margin-right: 30px;
+}
+
+.headTabRecentMusics img {
+    width: 20px;
+}
+
+.zoneRecentMusics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.zoneRecentMusicsLiveTwo {
+    display: none;
+}
+
+.zoneRecentMusics .recentMusic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0px 0px;
+}
+
+.zoneRecentMusics .recentMusic .infosRecentMusic {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: -1;
+    padding-left: 2px;
+}
+
+.blockImgRecentMusic {
+    padding-left: 25px;
+}
+
+.zoneRecentMusics .recentMusic .infosRecentMusic img {
+    max-width: 65px;
+}
+
+.zoneRecentMusics .recentMusic .infosRecentMusic .metasRecentMusic {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    max-width: calc(100% - 0px);
+    overflow: hidden;
+}
+
+.zoneRecentMusics .recentMusic .infosRecentMusic .metasRecentMusic .nameMusicRecentMusic {
+    font-size: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.zoneRecentMusics .recentMusic .infosRecentMusic .metasRecentMusic .nameArtistRecentMusic {
+    font-family: SoraThin;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.zoneRecentMusics .recentMusic .hourRecentMusic {
+    font-size: 14px;
+    position: absolute;
+    right: 20px;
+}
+
+.separatorRecentMusic {
+    height: 1px;
+    width: 100%;
+    background: #1E1E1E;
+    margin: 10px 0px;
+}
+
+
+
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .radios {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .liveRadio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .typeOfMusic {
+        background-color: transparent;
+        color: white;
+        padding: 5px 10px;
+        margin: 0px 5px 5px 0px;
+        font-size: 14px;
+        border: 0.2px solid rgba(255, 255, 255, 0.384);
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .headTabRecentMusics {
+        padding: 10px 15px;
+    }
+
+    .zoneRecentMusics {
+        padding: 30px 15px;
+    }   
+    
+    .blockImgRecentMusic {
+        padding-left: 10px;
+    }
+
+    .zoneRecentMusics .recentMusic .infosRecentMusic {
+        gap: 15px;
+    }
+
+    .zoneRecentMusics .recentMusic .hourRecentMusic {
+        right: 8px;
+    }
+}

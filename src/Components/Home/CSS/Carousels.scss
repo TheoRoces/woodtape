@@ -1,0 +1,46 @@
+.cards{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    max-width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth !important;
+    &::-webkit-scrollbar {
+      background: transparent; /* make scrollbar transparent */
+      -webkit-appearance: none;
+      width: 0;
+      height: 0;
+    }
+}
+  
+button.prev {
+    border: 0px;
+    margin: 0 8px;
+    padding: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 60px;
+    cursor: pointer;
+    background: transparent;
+    background: white;
+    width: 100px;
+}
+
+button.next {
+    border: 0px;
+    margin: 0 8px;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    bottom: 60px;
+    cursor: pointer;
+    background: transparent;
+    background: white;
+    width: 100px;
+}
+
+button.prev span,
+button.next span { 
+    color: black;
+    font-size: 14px;
+}
